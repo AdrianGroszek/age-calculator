@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Age calculator</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Changa+One:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="age-calc-content">
+			<div class="left-content">
+				<form class="date-input-form">
+					<div class="day">
+						<label for="day">day</label><br />
+						<input
+							type="number"
+							id="day"
+							name="day"
+							placeholder="DD"
+							class="input-size"
+						/>
+						<p class="wrong-input wrong-input1 hidden">Must be a valid day</p>
+					</div>
+					<div class="month">
+						<label for="month">month</label><br />
+						<input
+							type="number"
+							id="month"
+							name="month"
+							placeholder="MM"
+							class="input-size"
+						/>
+						<p class="wrong-input wrong-input2 hidden">Must be a valid month</p>
+					</div>
+					<div class="year">
+						<label for="year">year</label><br />
+						<input
+							type="number"
+							id="year"
+							name="year"
+							placeholder="YYYY"
+							class="input-size"
+						/>
+						<p class="wrong-input wrong-input3 hidden">Must be in the past</p>
+					</div>
+				</form>
+				<input type="submit" value="check" class="check-btn" />
+			</div>
+			<div class="right-content">
+				<p class="years-result"><span class="years">--</span>years</p>
+				<p class="months-result"><span class="months">--</span>months</p>
+				<p class="days-result"><span class="days">--</span>days</p>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
